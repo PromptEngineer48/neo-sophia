@@ -26,5 +26,6 @@ Trying the ScratchPad !
 
 
 ## Episode 12 - Data too big for LLMs? Try Scratchpads
+## Before running this, set the environment variables
     python -m examples.agent_example1
 
