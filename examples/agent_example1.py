@@ -18,14 +18,6 @@ import psycopg2
 
 opj = os.path.join
 
-os.environ.setdefault('BOT_TOKEN','6833712512:AAEF7MuxIhqZAYxQiuPr7lrasid2W8CWv3g')
-os.environ.setdefault('DB_USERNAME','postgres_ro')
-os.environ.setdefault('DB_PASSWORD','password')
-os.environ.setdefault('DB_NAME','VyttahAccounting')
-os.environ.setdefault('DB_URL','vyttah-database.ceu03herukvs.us-east-1.rds.amazonaws.com')
-os.environ.setdefault('OPENAI_API_BASE','http://localhost:11434/v1')
-os.environ.setdefault('OPENAI_API_KEY','ollama')
-
 def get_database_connection():
     # Retrieve database credentials from environment variables
     db_user = os.environ.get("DB_USERNAME")
