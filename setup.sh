@@ -8,8 +8,8 @@ curl -fsSL https://ollama.com/install.sh | sh
 echo "Starting Ollama server..."
 nohup ollama serve > ollama.log 2>&1 &
 
-# Pull from Mistral
-echo "Pulling from Mistral..."
-ollama pull mistral
+# Pull from Mixtral
+echo "Pulling from Mixtral..."
+ollama pull mixtral
 
 echo "Ollama Installed and is Running"
