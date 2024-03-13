@@ -5,9 +5,9 @@ Trying the ScratchPad
 ### Clone the Repo
     !git clone https://github.com/PromptEngineer48/neo-sophia.git
 
-### Install the conda
-    !wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    !bash Miniconda3-latest-Linux-x86_64.sh
+### Install the conda (Run this is command prompt)
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    bash Miniconda3-latest-Linux-x86_64.sh
 
 ### Start up a conda env
     !conda env create -f neo-sophia/env.yml
