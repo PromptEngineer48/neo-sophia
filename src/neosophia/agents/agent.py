@@ -30,6 +30,7 @@ EXTRACT_ANSWER_DESCRIPTION = (
     '    required: true'
 )
 
+my_model = 'mixtral'
 
 class Log:
     """ Simple class for logging """
@@ -960,7 +961,7 @@ class Agent:
         #     prompt=prompt_str, model=self.model_info.name)
         
         import ollama
-        response = ollama.chat(model='mixtral', messages=[
+        response = ollama.chat(model=my_model, messages=[
             {
                 'role': 'user',
                 'content': prompt_str,
