@@ -23,6 +23,7 @@ from neosophia.agents.data_classes import Colors, GPTModelInfo, Tool
 
 opj = os.path.join
 
+my_model = 'mixtral'
 
 def cprint(*args) -> None:
     """
@@ -71,7 +72,7 @@ def summarize_text(
     # response = oaiapi.chat_completion(prompt=prompt, model=model)
     
     import ollama
-    response = ollama.chat(model='mixtral', messages=[
+    response = ollama.chat(model=my_model, messages=[
         {
             'role': 'user',
             'content': prompt,
@@ -186,7 +187,7 @@ def convert_function_str_to_yaml(function_str: str) -> str:
     prompt = sp.FUNCTION_GPT_PROMPT + '\n\n' + function_str
     
     import ollama
-    response = ollama.chat(model='mixtral', messages=[
+    response = ollama.chat(model=my_model, messages=[
         {
             'role': 'user',
             'content': prompt,
@@ -271,7 +272,7 @@ def get_database_description(db_file: str, model: str = 'gpt-4-0613') -> str:
         user_prompt += f'Data Sample:\n{sample}\n\n'
         
     import ollama
-    response = ollama.chat(model='mixtral', messages=[
+    response = ollama.chat(model=my_model, messages=[
         {
             'role': 'user',
             'content': sp.DB_INFO_PROMPT,
@@ -474,7 +475,7 @@ def summarize_completed_steps(
     # response = oaiapi.chat_completion(prompt=prompt, model=model)
 
     import ollama
-    response = ollama.chat(model='mixtral', messages=[
+    response = ollama.chat(model=my_model, messages=[
         {
             'role': 'user',
             'content': prompt,
