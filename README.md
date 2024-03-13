@@ -13,9 +13,10 @@ Trying the ScratchPad
     conda env create -f neo-sophia/env.yml
     conda activate neosophia
     
-### install the neo-sophia libraries
-    !pip install -e neo-sophia
-    %cd neo-sophia
+### install the neo-sophia libraries (Run this in command prompt)
+    pip install -e neo-sophia
+    cd neo-sophia
+    
 ### Other housekeeping
     %cp config_example.json config.json
     %cp openai_api_key_example.txt openai_api_key.txt
