@@ -26,8 +26,5 @@ Trying the ScratchPad !
 
 
 ## Episode 12 - Data too big for LLMs? Try Scratchpads
-````
     python -m examples.agent_example
-
-````
 
