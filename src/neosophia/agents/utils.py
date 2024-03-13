@@ -23,7 +23,7 @@ from neosophia.agents.data_classes import Colors, GPTModelInfo, Tool
 
 opj = os.path.join
 
-my_model = 'mixtral'
+my_model = 'mistral'
 
 def cprint(*args) -> None:
     """
