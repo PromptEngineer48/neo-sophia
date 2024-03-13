@@ -30,7 +30,7 @@ EXTRACT_ANSWER_DESCRIPTION = (
     '    required: true'
 )
 
-my_model = 'mixtral'
+my_model = 'mistral'
 
 class Log:
     """ Simple class for logging """
