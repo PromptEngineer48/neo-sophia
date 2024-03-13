@@ -21,6 +21,9 @@ Trying the ScratchPad !
     cp config_example.json config.json
     cp openai_api_key_example.txt openai_api_key.txt
 
+### Ollama installation and Downloading Models
+    bash setup.sh
+
 
 ## Episode 12 - Data too big for LLMs? Try Scratchpads
 ````
