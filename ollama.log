@@ -1,0 +1,451 @@
+nohup: ignoring input
+Couldn't find '/root/.ollama/id_ed25519'. Generating new private key.
+Your new public key is: 
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKvczpB89J+BeHxn0W74AH8IESspVrDU2BhV4atNCWx9
+
+time=2024-03-12T18:54:03.674Z level=INFO source=images.go:710 msg="total blobs: 0"
+time=2024-03-12T18:54:03.674Z level=INFO source=images.go:717 msg="total unused blobs removed: 0"
+time=2024-03-12T18:54:03.675Z level=INFO source=routes.go:1021 msg="Listening on 127.0.0.1:11434 (version 0.1.28)"
+time=2024-03-12T18:54:03.675Z level=INFO source=payload_common.go:107 msg="Extracting dynamic libraries..."
+time=2024-03-12T18:54:07.665Z level=INFO source=payload_common.go:146 msg="Dynamic LLM libraries [cpu_avx rocm_v5 rocm_v6 cpu cpu_avx2 cuda_v11]"
+time=2024-03-12T18:54:07.665Z level=INFO source=gpu.go:94 msg="Detecting GPU type"
+time=2024-03-12T18:54:07.665Z level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-03-12T18:54:07.666Z level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.535.129.03]"
+time=2024-03-12T18:54:07.681Z level=INFO source=gpu.go:99 msg="Nvidia GPU detected"
+time=2024-03-12T18:54:07.681Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-03-12T18:54:07.687Z level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 8.6"
+[GIN] 2024/03/12 - 18:54:13 | 200 |     138.182µs |       127.0.0.1 | HEAD     "/"
+time=2024-03-12T18:54:16.012Z level=INFO source=download.go:136 msg="downloading e8a35b5937a5 in 42 100 MB part(s)"
+time=2024-03-12T18:54:34.417Z level=INFO source=download.go:136 msg="downloading 43070e2d4e53 in 1 11 KB part(s)"
+time=2024-03-12T18:54:37.786Z level=INFO source=download.go:136 msg="downloading e6836092461f in 1 42 B part(s)"
+time=2024-03-12T18:54:41.218Z level=INFO source=download.go:136 msg="downloading ed11eda7790d in 1 30 B part(s)"
+time=2024-03-12T18:54:44.542Z level=INFO source=download.go:136 msg="downloading f9b1e3196ecf in 1 483 B part(s)"
+[GIN] 2024/03/12 - 18:54:50 | 200 |   37.0506366s |       127.0.0.1 | POST     "/api/pull"
+time=2024-03-12T18:55:59.715Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-03-12T18:55:59.715Z level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 8.6"
+time=2024-03-12T18:55:59.715Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-03-12T18:55:59.715Z level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 8.6"
+time=2024-03-12T18:55:59.715Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-03-12T18:55:59.723Z level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama3189124162/cuda_v11/libext_server.so"
+time=2024-03-12T18:55:59.723Z level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 1 CUDA devices:
+  Device 0: NVIDIA RTX A4000, compute capability 8.6, VMM: yes
+llama_model_loader: loaded meta data with 24 key-value pairs and 291 tensors from /root/.ollama/models/blobs/sha256:e8a35b5937a5e6d5c35d1f2a15f161e07eefe5e5bb0a3cdd42998ee79b057730 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = mistralai
+llama_model_loader: - kv   2:                       llama.context_length u32              = 32768
+llama_model_loader: - kv   3:                     llama.embedding_length u32              = 4096
+llama_model_loader: - kv   4:                          llama.block_count u32              = 32
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 14336
+llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                       llama.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  11:                          general.file_type u32              = 2
+llama_model_loader: - kv  12:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,32000]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+llama_model_loader: - kv  14:                      tokenizer.ggml.scores arr[f32,32000]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,32000]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,58980]   = ["▁ t", "i n", "e r", "▁ a", "h e...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv  20:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  21:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  22:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+llama_model_loader: - kv  23:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type q4_0:  225 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 259/32000 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = SPM
+llm_load_print_meta: n_vocab          = 32000
+llm_load_print_meta: n_merges         = 0
+llm_load_print_meta: n_ctx_train      = 32768
+llm_load_print_meta: n_embd           = 4096
+llm_load_print_meta: n_head           = 32
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 32
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 4
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 14336
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 1000000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 32768
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 7B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 7.24 B
+llm_load_print_meta: model size       = 3.83 GiB (4.54 BPW) 
+llm_load_print_meta: general.name     = mistralai
+llm_load_print_meta: BOS token        = 1 '<s>'
+llm_load_print_meta: EOS token        = 2 '</s>'
+llm_load_print_meta: UNK token        = 0 '<unk>'
+llm_load_print_meta: LF token         = 13 '<0x0A>'
+llm_load_tensors: ggml ctx size =    0.22 MiB
+llm_load_tensors: offloading 32 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloaded 33/33 layers to GPU
+llm_load_tensors:        CPU buffer size =    70.31 MiB
+llm_load_tensors:      CUDA0 buffer size =  3847.55 MiB
+..................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 1000000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:      CUDA0 KV buffer size =   256.00 MiB
+llama_new_context_with_model: KV self size  =  256.00 MiB, K (f16):  128.00 MiB, V (f16):  128.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    13.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   164.00 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =     8.00 MiB
+llama_new_context_with_model: graph splits (measure): 2
+loading library /tmp/ollama3189124162/cuda_v11/libext_server.so
+{"function":"initialize","level":"INFO","line":433,"msg":"initializing slots","n_slots":1,"tid":"140596870104640","timestamp":1710269762}
+{"function":"initialize","level":"INFO","line":442,"msg":"new slot","n_ctx_slot":2048,"slot_id":0,"tid":"140596870104640","timestamp":1710269762}
+time=2024-03-12T18:56:02.431Z level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+{"function":"update_slots","level":"INFO","line":1565,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140591962781248","timestamp":1710269762}
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140591962781248","timestamp":1710269762}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":0,"n_prompt_tokens_processed":333,"slot_id":0,"task_id":0,"tid":"140591962781248","timestamp":1710269762}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140591962781248","timestamp":1710269762}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     325.10 ms /   333 tokens (    0.98 ms per token,  1024.30 tokens per second)","n_prompt_tokens_processed":333,"n_tokens_second":1024.3033660515719,"slot_id":0,"t_prompt_processing":325.099,"t_token":0.9762732732732733,"task_id":0,"tid":"140591962781248","timestamp":1710269763}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =     980.24 ms /    67 runs   (   14.63 ms per token,    68.35 tokens per second)","n_decoded":67,"n_tokens_second":68.35060801436383,"slot_id":0,"t_token":14.63044776119403,"t_token_generation":980.24,"task_id":0,"tid":"140591962781248","timestamp":1710269763}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    1305.34 ms","slot_id":0,"t_prompt_processing":325.099,"t_token_generation":980.24,"t_total":1305.339,"task_id":0,"tid":"140591962781248","timestamp":1710269763}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":400,"n_ctx":2048,"n_past":399,"n_system_tokens":0,"slot_id":0,"task_id":0,"tid":"140591962781248","timestamp":1710269763,"truncated":false}
+[GIN] 2024/03/12 - 18:56:03 | 200 |  4.556561908s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":70,"tid":"140591962781248","timestamp":1710269763}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":240,"n_prompt_tokens_processed":674,"slot_id":0,"task_id":70,"tid":"140591962781248","timestamp":1710269763}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":240,"slot_id":0,"task_id":70,"tid":"140591962781248","timestamp":1710269763}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     633.03 ms /   674 tokens (    0.94 ms per token,  1064.71 tokens per second)","n_prompt_tokens_processed":674,"n_tokens_second":1064.7137436535795,"slot_id":0,"t_prompt_processing":633.034,"t_token":0.939219584569733,"task_id":70,"tid":"140591962781248","timestamp":1710269771}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    7287.72 ms /   500 runs   (   14.58 ms per token,    68.61 tokens per second)","n_decoded":500,"n_tokens_second":68.60857286072638,"slot_id":0,"t_token":14.575438,"t_token_generation":7287.719,"task_id":70,"tid":"140591962781248","timestamp":1710269771}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    7920.75 ms","slot_id":0,"t_prompt_processing":633.034,"t_token_generation":7287.719,"t_total":7920.753,"task_id":70,"tid":"140591962781248","timestamp":1710269771}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1414,"n_ctx":2048,"n_past":1413,"n_system_tokens":0,"slot_id":0,"task_id":70,"tid":"140591962781248","timestamp":1710269771,"truncated":false}
+[GIN] 2024/03/12 - 18:56:11 | 200 |  7.932966747s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":573,"tid":"140591962781248","timestamp":1710269771}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":240,"n_prompt_tokens_processed":434,"slot_id":0,"task_id":573,"tid":"140591962781248","timestamp":1710269771}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":240,"slot_id":0,"task_id":573,"tid":"140591962781248","timestamp":1710269771}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     399.20 ms /   434 tokens (    0.92 ms per token,  1087.18 tokens per second)","n_prompt_tokens_processed":434,"n_tokens_second":1087.1770720868537,"slot_id":0,"t_prompt_processing":399.199,"t_token":0.9198133640552996,"task_id":573,"tid":"140591962781248","timestamp":1710269773}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    1626.45 ms /   113 runs   (   14.39 ms per token,    69.48 tokens per second)","n_decoded":113,"n_tokens_second":69.4764671523871,"slot_id":0,"t_token":14.393362831858408,"t_token_generation":1626.45,"task_id":573,"tid":"140591962781248","timestamp":1710269773}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    2025.65 ms","slot_id":0,"t_prompt_processing":399.199,"t_token_generation":1626.45,"t_total":2025.6490000000001,"task_id":573,"tid":"140591962781248","timestamp":1710269773}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":787,"n_ctx":2048,"n_past":786,"n_system_tokens":0,"slot_id":0,"task_id":573,"tid":"140591962781248","timestamp":1710269773,"truncated":false}
+[GIN] 2024/03/12 - 18:56:13 | 200 |  2.033748367s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":689,"tid":"140591962781248","timestamp":1710269773}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":240,"n_prompt_tokens_processed":94,"slot_id":0,"task_id":689,"tid":"140591962781248","timestamp":1710269773}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":240,"slot_id":0,"task_id":689,"tid":"140591962781248","timestamp":1710269773}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     130.26 ms /    94 tokens (    1.39 ms per token,   721.64 tokens per second)","n_prompt_tokens_processed":94,"n_tokens_second":721.6391957561475,"slot_id":0,"t_prompt_processing":130.259,"t_token":1.3857340425531914,"task_id":689,"tid":"140591962781248","timestamp":1710269774}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =     889.16 ms /    63 runs   (   14.11 ms per token,    70.85 tokens per second)","n_decoded":63,"n_tokens_second":70.85331003046693,"slot_id":0,"t_token":14.113666666666665,"t_token_generation":889.161,"task_id":689,"tid":"140591962781248","timestamp":1710269774}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    1019.42 ms","slot_id":0,"t_prompt_processing":130.259,"t_token_generation":889.161,"t_total":1019.42,"task_id":689,"tid":"140591962781248","timestamp":1710269774}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":397,"n_ctx":2048,"n_past":396,"n_system_tokens":0,"slot_id":0,"task_id":689,"tid":"140591962781248","timestamp":1710269774,"truncated":false}
+[GIN] 2024/03/12 - 18:56:14 | 200 |  1.026041202s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":755,"tid":"140591962781248","timestamp":1710269774}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":242,"n_prompt_tokens_processed":92,"slot_id":0,"task_id":755,"tid":"140591962781248","timestamp":1710269774}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":242,"slot_id":0,"task_id":755,"tid":"140591962781248","timestamp":1710269774}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     132.66 ms /    92 tokens (    1.44 ms per token,   693.51 tokens per second)","n_prompt_tokens_processed":92,"n_tokens_second":693.5126415293462,"slot_id":0,"t_prompt_processing":132.658,"t_token":1.4419347826086955,"task_id":755,"tid":"140591962781248","timestamp":1710269775}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =     890.28 ms /    63 runs   (   14.13 ms per token,    70.76 tokens per second)","n_decoded":63,"n_tokens_second":70.76393600244417,"slot_id":0,"t_token":14.131492063492063,"t_token_generation":890.284,"task_id":755,"tid":"140591962781248","timestamp":1710269775}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    1022.94 ms","slot_id":0,"t_prompt_processing":132.658,"t_token_generation":890.284,"t_total":1022.942,"task_id":755,"tid":"140591962781248","timestamp":1710269775}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":397,"n_ctx":2048,"n_past":396,"n_system_tokens":0,"slot_id":0,"task_id":755,"tid":"140591962781248","timestamp":1710269775,"truncated":false}
+[GIN] 2024/03/12 - 18:56:15 | 200 |  1.029821533s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":821,"tid":"140591962781248","timestamp":1710269775}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":242,"n_prompt_tokens_processed":109,"slot_id":0,"task_id":821,"tid":"140591962781248","timestamp":1710269775}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":242,"slot_id":0,"task_id":821,"tid":"140591962781248","timestamp":1710269775}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     133.38 ms /   109 tokens (    1.22 ms per token,   817.24 tokens per second)","n_prompt_tokens_processed":109,"n_tokens_second":817.244611059044,"slot_id":0,"t_prompt_processing":133.375,"t_token":1.223623853211009,"task_id":821,"tid":"140591962781248","timestamp":1710269776}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =     990.57 ms /    70 runs   (   14.15 ms per token,    70.67 tokens per second)","n_decoded":70,"n_tokens_second":70.6665980191143,"slot_id":0,"t_token":14.150957142857143,"t_token_generation":990.567,"task_id":821,"tid":"140591962781248","timestamp":1710269776}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    1123.94 ms","slot_id":0,"t_prompt_processing":133.375,"t_token_generation":990.567,"t_total":1123.942,"task_id":821,"tid":"140591962781248","timestamp":1710269776}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":421,"n_ctx":2048,"n_past":420,"n_system_tokens":0,"slot_id":0,"task_id":821,"tid":"140591962781248","timestamp":1710269776,"truncated":false}
+[GIN] 2024/03/12 - 18:56:16 | 200 |  1.130235886s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":894,"tid":"140591962781248","timestamp":1710269776}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":240,"n_prompt_tokens_processed":369,"slot_id":0,"task_id":894,"tid":"140591962781248","timestamp":1710269776}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":240,"slot_id":0,"task_id":894,"tid":"140591962781248","timestamp":1710269776}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     336.63 ms /   369 tokens (    0.91 ms per token,  1096.16 tokens per second)","n_prompt_tokens_processed":369,"n_tokens_second":1096.155731349757,"slot_id":0,"t_prompt_processing":336.631,"t_token":0.9122791327913279,"task_id":894,"tid":"140591962781248","timestamp":1710269780}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    3282.60 ms /   228 runs   (   14.40 ms per token,    69.46 tokens per second)","n_decoded":228,"n_tokens_second":69.45711647562405,"slot_id":0,"t_token":14.397372807017545,"t_token_generation":3282.601,"task_id":894,"tid":"140591962781248","timestamp":1710269780}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    3619.23 ms","slot_id":0,"t_prompt_processing":336.631,"t_token_generation":3282.601,"t_total":3619.232,"task_id":894,"tid":"140591962781248","timestamp":1710269780}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":837,"n_ctx":2048,"n_past":836,"n_system_tokens":0,"slot_id":0,"task_id":894,"tid":"140591962781248","timestamp":1710269780,"truncated":false}
+[GIN] 2024/03/12 - 18:56:20 | 200 |  3.626990026s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":1125,"tid":"140591962781248","timestamp":1710269799}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":0,"n_prompt_tokens_processed":1616,"slot_id":0,"task_id":1125,"tid":"140591962781248","timestamp":1710269799}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":1125,"tid":"140591962781248","timestamp":1710269799}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =    1542.98 ms /  1616 tokens (    0.95 ms per token,  1047.33 tokens per second)","n_prompt_tokens_processed":1616,"n_tokens_second":1047.3260456895987,"slot_id":0,"t_prompt_processing":1542.977,"t_token":0.9548125000000001,"task_id":1125,"tid":"140591962781248","timestamp":1710269802}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    2145.27 ms /   144 runs   (   14.90 ms per token,    67.12 tokens per second)","n_decoded":144,"n_tokens_second":67.12444919494945,"slot_id":0,"t_token":14.897701388888887,"t_token_generation":2145.269,"task_id":1125,"tid":"140591962781248","timestamp":1710269802}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    3688.25 ms","slot_id":0,"t_prompt_processing":1542.977,"t_token_generation":2145.269,"t_total":3688.246,"task_id":1125,"tid":"140591962781248","timestamp":1710269802}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1760,"n_ctx":2048,"n_past":1759,"n_system_tokens":0,"slot_id":0,"task_id":1125,"tid":"140591962781248","timestamp":1710269802,"truncated":true}
+[GIN] 2024/03/12 - 18:56:42 | 200 |  3.705527349s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":1272,"tid":"140591962781248","timestamp":1710269802}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1317,"n_prompt_tokens_processed":339,"slot_id":0,"task_id":1272,"tid":"140591962781248","timestamp":1710269802}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1317,"slot_id":0,"task_id":1272,"tid":"140591962781248","timestamp":1710269802}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     366.10 ms /   339 tokens (    1.08 ms per token,   925.97 tokens per second)","n_prompt_tokens_processed":339,"n_tokens_second":925.9689213144935,"slot_id":0,"t_prompt_processing":366.103,"t_token":1.0799498525073747,"task_id":1272,"tid":"140591962781248","timestamp":1710269804}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    1338.66 ms /    90 runs   (   14.87 ms per token,    67.23 tokens per second)","n_decoded":90,"n_tokens_second":67.23141051499259,"slot_id":0,"t_token":14.874,"t_token_generation":1338.66,"task_id":1272,"tid":"140591962781248","timestamp":1710269804}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    1704.76 ms","slot_id":0,"t_prompt_processing":366.103,"t_token_generation":1338.66,"t_total":1704.7630000000001,"task_id":1272,"tid":"140591962781248","timestamp":1710269804}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1746,"n_ctx":2048,"n_past":1745,"n_system_tokens":0,"slot_id":0,"task_id":1272,"tid":"140591962781248","timestamp":1710269804,"truncated":true}
+[GIN] 2024/03/12 - 18:56:44 | 200 |  1.723392058s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":1365,"tid":"140591962781248","timestamp":1710269804}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1354,"n_prompt_tokens_processed":330,"slot_id":0,"task_id":1365,"tid":"140591962781248","timestamp":1710269804}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1354,"slot_id":0,"task_id":1365,"tid":"140591962781248","timestamp":1710269804}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     355.19 ms /   330 tokens (    1.08 ms per token,   929.09 tokens per second)","n_prompt_tokens_processed":330,"n_tokens_second":929.0932894125596,"slot_id":0,"t_prompt_processing":355.185,"t_token":1.0763181818181817,"task_id":1365,"tid":"140591962781248","timestamp":1710269809}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    4584.75 ms /   304 runs   (   15.08 ms per token,    66.31 tokens per second)","n_decoded":304,"n_tokens_second":66.30683575491423,"slot_id":0,"t_token":15.081401315789474,"t_token_generation":4584.746,"task_id":1365,"tid":"140591962781248","timestamp":1710269809}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    4939.93 ms","slot_id":0,"t_prompt_processing":355.185,"t_token_generation":4584.746,"t_total":4939.9310000000005,"task_id":1365,"tid":"140591962781248","timestamp":1710269809}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1988,"n_ctx":2048,"n_past":1987,"n_system_tokens":0,"slot_id":0,"task_id":1365,"tid":"140591962781248","timestamp":1710269809,"truncated":true}
+[GIN] 2024/03/12 - 18:56:49 | 200 |  4.956590514s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":1672,"tid":"140591962781248","timestamp":1710269809}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1382,"n_prompt_tokens_processed":382,"slot_id":0,"task_id":1672,"tid":"140591962781248","timestamp":1710269809}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1382,"slot_id":0,"task_id":1672,"tid":"140591962781248","timestamp":1710269809}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     371.73 ms /   382 tokens (    0.97 ms per token,  1027.63 tokens per second)","n_prompt_tokens_processed":382,"n_tokens_second":1027.627579156915,"slot_id":0,"t_prompt_processing":371.73,"t_token":0.9731151832460734,"task_id":1672,"tid":"140591962781248","timestamp":1710269812}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    2334.42 ms /   155 runs   (   15.06 ms per token,    66.40 tokens per second)","n_decoded":155,"n_tokens_second":66.39770598067699,"slot_id":0,"t_token":15.060761290322581,"t_token_generation":2334.418,"task_id":1672,"tid":"140591962781248","timestamp":1710269812}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    2706.15 ms","slot_id":0,"t_prompt_processing":371.73,"t_token_generation":2334.418,"t_total":2706.148,"task_id":1672,"tid":"140591962781248","timestamp":1710269812}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1919,"n_ctx":2048,"n_past":1918,"n_system_tokens":0,"slot_id":0,"task_id":1672,"tid":"140591962781248","timestamp":1710269812,"truncated":true}
+[GIN] 2024/03/12 - 18:56:52 | 200 |  2.725561965s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":1830,"tid":"140591962781248","timestamp":1710269812}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1462,"n_prompt_tokens_processed":367,"slot_id":0,"task_id":1830,"tid":"140591962781248","timestamp":1710269812}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1462,"slot_id":0,"task_id":1830,"tid":"140591962781248","timestamp":1710269812}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     370.92 ms /   367 tokens (    1.01 ms per token,   989.44 tokens per second)","n_prompt_tokens_processed":367,"n_tokens_second":989.4396859674807,"slot_id":0,"t_prompt_processing":370.917,"t_token":1.0106730245231608,"task_id":1830,"tid":"140591962781248","timestamp":1710269814}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    1952.96 ms /   129 runs   (   15.14 ms per token,    66.05 tokens per second)","n_decoded":129,"n_tokens_second":66.05361402876352,"slot_id":0,"t_token":15.139217054263566,"t_token_generation":1952.959,"task_id":1830,"tid":"140591962781248","timestamp":1710269814}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    2323.88 ms","slot_id":0,"t_prompt_processing":370.917,"t_token_generation":1952.959,"t_total":2323.876,"task_id":1830,"tid":"140591962781248","timestamp":1710269814}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1958,"n_ctx":2048,"n_past":1957,"n_system_tokens":0,"slot_id":0,"task_id":1830,"tid":"140591962781248","timestamp":1710269814,"truncated":true}
+[GIN] 2024/03/12 - 18:56:54 | 200 |  2.341051796s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":1962,"tid":"140591962781248","timestamp":1710269814}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1527,"n_prompt_tokens_processed":331,"slot_id":0,"task_id":1962,"tid":"140591962781248","timestamp":1710269814}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1527,"slot_id":0,"task_id":1962,"tid":"140591962781248","timestamp":1710269814}
+{"function":"update_slots","level":"INFO","line":1588,"msg":"slot context shift","n_cache_tokens":2048,"n_ctx":2048,"n_discard":1023,"n_keep":1,"n_left":2046,"n_past":2047,"n_system_tokens":0,"slot_id":0,"task_id":1962,"tid":"140591962781248","timestamp":1710269818}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     362.81 ms /   331 tokens (    1.10 ms per token,   912.32 tokens per second)","n_prompt_tokens_processed":331,"n_tokens_second":912.3207399996141,"slot_id":0,"t_prompt_processing":362.811,"t_token":1.0961057401812688,"task_id":1962,"tid":"140591962781248","timestamp":1710269820}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    5082.40 ms /   333 runs   (   15.26 ms per token,    65.52 tokens per second)","n_decoded":333,"n_tokens_second":65.5202782309761,"slot_id":0,"t_token":15.26245045045045,"t_token_generation":5082.396,"task_id":1962,"tid":"140591962781248","timestamp":1710269820}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    5445.21 ms","slot_id":0,"t_prompt_processing":362.811,"t_token_generation":5082.396,"t_total":5445.206999999999,"task_id":1962,"tid":"140591962781248","timestamp":1710269820}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1168,"n_ctx":2048,"n_past":1167,"n_system_tokens":0,"slot_id":0,"task_id":1962,"tid":"140591962781248","timestamp":1710269820,"truncated":true}
+[GIN] 2024/03/12 - 18:57:00 | 200 |  5.462532306s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":2298,"tid":"140591962781248","timestamp":1710269820}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1,"n_prompt_tokens_processed":1915,"slot_id":0,"task_id":2298,"tid":"140591962781248","timestamp":1710269820}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":2298,"tid":"140591962781248","timestamp":1710269820}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =    1828.72 ms /  1915 tokens (    0.95 ms per token,  1047.18 tokens per second)","n_prompt_tokens_processed":1915,"n_tokens_second":1047.1805415809965,"slot_id":0,"t_prompt_processing":1828.72,"t_token":0.9549451697127938,"task_id":2298,"tid":"140591962781248","timestamp":1710269823}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    1225.55 ms /    81 runs   (   15.13 ms per token,    66.09 tokens per second)","n_decoded":81,"n_tokens_second":66.09282860171238,"slot_id":0,"t_token":15.130234567901235,"t_token_generation":1225.549,"task_id":2298,"tid":"140591962781248","timestamp":1710269823}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    3054.27 ms","slot_id":0,"t_prompt_processing":1828.72,"t_token_generation":1225.549,"t_total":3054.2690000000002,"task_id":2298,"tid":"140591962781248","timestamp":1710269823}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1997,"n_ctx":2048,"n_past":1996,"n_system_tokens":0,"slot_id":0,"task_id":2298,"tid":"140591962781248","timestamp":1710269823,"truncated":true}
+[GIN] 2024/03/12 - 18:57:03 | 200 |    3.0749638s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":2382,"tid":"140591962781248","timestamp":1710269823}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1614,"n_prompt_tokens_processed":354,"slot_id":0,"task_id":2382,"tid":"140591962781248","timestamp":1710269823}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1614,"slot_id":0,"task_id":2382,"tid":"140591962781248","timestamp":1710269823}
+{"function":"update_slots","level":"INFO","line":1588,"msg":"slot context shift","n_cache_tokens":2048,"n_ctx":2048,"n_discard":1023,"n_keep":1,"n_left":2046,"n_past":2047,"n_system_tokens":0,"slot_id":0,"task_id":2382,"tid":"140591962781248","timestamp":1710269824}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     375.46 ms /   354 tokens (    1.06 ms per token,   942.83 tokens per second)","n_prompt_tokens_processed":354,"n_tokens_second":942.8334008054035,"slot_id":0,"t_prompt_processing":375.464,"t_token":1.060632768361582,"task_id":2382,"tid":"140591962781248","timestamp":1710269825}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    1629.01 ms /   107 runs   (   15.22 ms per token,    65.68 tokens per second)","n_decoded":107,"n_tokens_second":65.68418674689549,"slot_id":0,"t_token":15.22436448598131,"t_token_generation":1629.007,"task_id":2382,"tid":"140591962781248","timestamp":1710269825}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    2004.47 ms","slot_id":0,"t_prompt_processing":375.464,"t_token_generation":1629.007,"t_total":2004.471,"task_id":2382,"tid":"140591962781248","timestamp":1710269825}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1052,"n_ctx":2048,"n_past":1051,"n_system_tokens":0,"slot_id":0,"task_id":2382,"tid":"140591962781248","timestamp":1710269825,"truncated":true}
+[GIN] 2024/03/12 - 18:57:05 | 200 |  2.022017212s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":2492,"tid":"140591962781248","timestamp":1710269825}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1,"n_prompt_tokens_processed":2019,"slot_id":0,"task_id":2492,"tid":"140591962781248","timestamp":1710269825}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1,"slot_id":0,"task_id":2492,"tid":"140591962781248","timestamp":1710269825}
+{"function":"update_slots","level":"INFO","line":1588,"msg":"slot context shift","n_cache_tokens":2048,"n_ctx":2048,"n_discard":1023,"n_keep":1,"n_left":2046,"n_past":2047,"n_system_tokens":0,"slot_id":0,"task_id":2492,"tid":"140591962781248","timestamp":1710269827}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =    1971.68 ms /  2019 tokens (    0.98 ms per token,  1024.00 tokens per second)","n_prompt_tokens_processed":2019,"n_tokens_second":1023.997240938588,"slot_id":0,"t_prompt_processing":1971.685,"t_token":0.9765651312530955,"task_id":2492,"tid":"140591962781248","timestamp":1710269835}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    7924.80 ms /   516 runs   (   15.36 ms per token,    65.11 tokens per second)","n_decoded":516,"n_tokens_second":65.11206973351246,"slot_id":0,"t_token":15.358135658914728,"t_token_generation":7924.798,"task_id":2492,"tid":"140591962781248","timestamp":1710269835}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    9896.48 ms","slot_id":0,"t_prompt_processing":1971.685,"t_token_generation":7924.798,"t_total":9896.483,"task_id":2492,"tid":"140591962781248","timestamp":1710269835}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1513,"n_ctx":2048,"n_past":1512,"n_system_tokens":0,"slot_id":0,"task_id":2492,"tid":"140591962781248","timestamp":1710269835,"truncated":true}
+[GIN] 2024/03/12 - 18:57:15 | 200 |  9.912893911s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":3011,"tid":"140591962781248","timestamp":1710269835}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":0,"n_prompt_tokens_processed":1054,"slot_id":0,"task_id":3011,"tid":"140591962781248","timestamp":1710269835}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":3011,"tid":"140591962781248","timestamp":1710269835}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =    1033.08 ms /  1054 tokens (    0.98 ms per token,  1020.25 tokens per second)","n_prompt_tokens_processed":1054,"n_tokens_second":1020.24913825731,"slot_id":0,"t_prompt_processing":1033.081,"t_token":0.9801527514231498,"task_id":3011,"tid":"140591962781248","timestamp":1710269838}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    1797.74 ms /   123 runs   (   14.62 ms per token,    68.42 tokens per second)","n_decoded":123,"n_tokens_second":68.41908525351775,"slot_id":0,"t_token":14.61580487804878,"t_token_generation":1797.744,"task_id":3011,"tid":"140591962781248","timestamp":1710269838}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    2830.82 ms","slot_id":0,"t_prompt_processing":1033.081,"t_token_generation":1797.744,"t_total":2830.825,"task_id":3011,"tid":"140591962781248","timestamp":1710269838}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1177,"n_ctx":2048,"n_past":1176,"n_system_tokens":0,"slot_id":0,"task_id":3011,"tid":"140591962781248","timestamp":1710269838,"truncated":true}
+[GIN] 2024/03/12 - 18:57:18 | 200 |  2.849476753s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":3137,"tid":"140591962781248","timestamp":1710269838}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":752,"n_prompt_tokens_processed":354,"slot_id":0,"task_id":3137,"tid":"140591962781248","timestamp":1710269838}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":752,"slot_id":0,"task_id":3137,"tid":"140591962781248","timestamp":1710269838}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     359.86 ms /   354 tokens (    1.02 ms per token,   983.72 tokens per second)","n_prompt_tokens_processed":354,"n_tokens_second":983.7186231273915,"slot_id":0,"t_prompt_processing":359.859,"t_token":1.016550847457627,"task_id":3137,"tid":"140591962781248","timestamp":1710269842}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    4419.87 ms /   298 runs   (   14.83 ms per token,    67.42 tokens per second)","n_decoded":298,"n_tokens_second":67.42281275757269,"slot_id":0,"t_token":14.831775167785233,"t_token_generation":4419.869,"task_id":3137,"tid":"140591962781248","timestamp":1710269842}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    4779.73 ms","slot_id":0,"t_prompt_processing":359.859,"t_token_generation":4419.869,"t_total":4779.728,"task_id":3137,"tid":"140591962781248","timestamp":1710269842}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1404,"n_ctx":2048,"n_past":1403,"n_system_tokens":0,"slot_id":0,"task_id":3137,"tid":"140591962781248","timestamp":1710269842,"truncated":true}
+[GIN] 2024/03/12 - 18:57:22 | 200 |  4.797837517s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":3438,"tid":"140591962781248","timestamp":1710269842}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":804,"n_prompt_tokens_processed":360,"slot_id":0,"task_id":3438,"tid":"140591962781248","timestamp":1710269842}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":804,"slot_id":0,"task_id":3438,"tid":"140591962781248","timestamp":1710269842}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     363.42 ms /   360 tokens (    1.01 ms per token,   990.58 tokens per second)","n_prompt_tokens_processed":360,"n_tokens_second":990.5812235329079,"slot_id":0,"t_prompt_processing":363.423,"t_token":1.0095083333333332,"task_id":3438,"tid":"140591962781248","timestamp":1710269849}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    6306.82 ms /   422 runs   (   14.95 ms per token,    66.91 tokens per second)","n_decoded":422,"n_tokens_second":66.91169242185444,"slot_id":0,"t_token":14.945071090047392,"t_token_generation":6306.82,"task_id":3438,"tid":"140591962781248","timestamp":1710269849}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    6670.24 ms","slot_id":0,"t_prompt_processing":363.423,"t_token_generation":6306.82,"t_total":6670.2429999999995,"task_id":3438,"tid":"140591962781248","timestamp":1710269849}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1586,"n_ctx":2048,"n_past":1585,"n_system_tokens":0,"slot_id":0,"task_id":3438,"tid":"140591962781248","timestamp":1710269849,"truncated":true}
+[GIN] 2024/03/12 - 18:57:29 | 200 |  6.687732213s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":3863,"tid":"140591962781248","timestamp":1710269849}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":862,"n_prompt_tokens_processed":342,"slot_id":0,"task_id":3863,"tid":"140591962781248","timestamp":1710269849}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":862,"slot_id":0,"task_id":3863,"tid":"140591962781248","timestamp":1710269849}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     369.25 ms /   342 tokens (    1.08 ms per token,   926.19 tokens per second)","n_prompt_tokens_processed":342,"n_tokens_second":926.1892188325141,"slot_id":0,"t_prompt_processing":369.255,"t_token":1.0796929824561403,"task_id":3863,"tid":"140591962781248","timestamp":1710269855}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    5060.11 ms /   339 runs   (   14.93 ms per token,    66.99 tokens per second)","n_decoded":339,"n_tokens_second":66.99456454718789,"slot_id":0,"t_token":14.92658407079646,"t_token_generation":5060.112,"task_id":3863,"tid":"140591962781248","timestamp":1710269855}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    5429.37 ms","slot_id":0,"t_prompt_processing":369.255,"t_token_generation":5060.112,"t_total":5429.367,"task_id":3863,"tid":"140591962781248","timestamp":1710269855}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1543,"n_ctx":2048,"n_past":1542,"n_system_tokens":0,"slot_id":0,"task_id":3863,"tid":"140591962781248","timestamp":1710269855,"truncated":true}
+[GIN] 2024/03/12 - 18:57:35 | 200 |   5.44937402s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":4205,"tid":"140591962781248","timestamp":1710269855}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":902,"n_prompt_tokens_processed":364,"slot_id":0,"task_id":4205,"tid":"140591962781248","timestamp":1710269855}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":902,"slot_id":0,"task_id":4205,"tid":"140591962781248","timestamp":1710269855}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     368.04 ms /   364 tokens (    1.01 ms per token,   989.04 tokens per second)","n_prompt_tokens_processed":364,"n_tokens_second":989.0363688236172,"slot_id":0,"t_prompt_processing":368.035,"t_token":1.0110851648351649,"task_id":4205,"tid":"140591962781248","timestamp":1710269861}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    5855.28 ms /   390 runs   (   15.01 ms per token,    66.61 tokens per second)","n_decoded":390,"n_tokens_second":66.60656136112387,"slot_id":0,"t_token":15.013535897435899,"t_token_generation":5855.279,"task_id":4205,"tid":"140591962781248","timestamp":1710269861}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    6223.31 ms","slot_id":0,"t_prompt_processing":368.035,"t_token_generation":5855.279,"t_total":6223.314,"task_id":4205,"tid":"140591962781248","timestamp":1710269861}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1656,"n_ctx":2048,"n_past":1655,"n_system_tokens":0,"slot_id":0,"task_id":4205,"tid":"140591962781248","timestamp":1710269861,"truncated":true}
+[GIN] 2024/03/12 - 18:57:41 | 200 |  6.241894796s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":4598,"tid":"140591962781248","timestamp":1710269861}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":964,"n_prompt_tokens_processed":379,"slot_id":0,"task_id":4598,"tid":"140591962781248","timestamp":1710269861}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":964,"slot_id":0,"task_id":4598,"tid":"140591962781248","timestamp":1710269861}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     375.12 ms /   379 tokens (    0.99 ms per token,  1010.35 tokens per second)","n_prompt_tokens_processed":379,"n_tokens_second":1010.3487435953487,"slot_id":0,"t_prompt_processing":375.118,"t_token":0.9897572559366754,"task_id":4598,"tid":"140591962781248","timestamp":1710269867}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    5264.77 ms /   350 runs   (   15.04 ms per token,    66.48 tokens per second)","n_decoded":350,"n_tokens_second":66.47970042347569,"slot_id":0,"t_token":15.042185714285715,"t_token_generation":5264.765,"task_id":4598,"tid":"140591962781248","timestamp":1710269867}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    5639.88 ms","slot_id":0,"t_prompt_processing":375.118,"t_token_generation":5264.765,"t_total":5639.883000000001,"task_id":4598,"tid":"140591962781248","timestamp":1710269867}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1693,"n_ctx":2048,"n_past":1692,"n_system_tokens":0,"slot_id":0,"task_id":4598,"tid":"140591962781248","timestamp":1710269867,"truncated":true}
+[GIN] 2024/03/12 - 18:57:47 | 200 |  5.663861809s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":4951,"tid":"140591962781248","timestamp":1710269867}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1041,"n_prompt_tokens_processed":341,"slot_id":0,"task_id":4951,"tid":"140591962781248","timestamp":1710269867}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1041,"slot_id":0,"task_id":4951,"tid":"140591962781248","timestamp":1710269867}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     366.24 ms /   341 tokens (    1.07 ms per token,   931.09 tokens per second)","n_prompt_tokens_processed":341,"n_tokens_second":931.0885271326296,"slot_id":0,"t_prompt_processing":366.238,"t_token":1.0740117302052785,"task_id":4951,"tid":"140591962781248","timestamp":1710269871}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    4441.30 ms /   295 runs   (   15.06 ms per token,    66.42 tokens per second)","n_decoded":295,"n_tokens_second":66.42199356044401,"slot_id":0,"t_token":15.055254237288135,"t_token_generation":4441.3,"task_id":4951,"tid":"140591962781248","timestamp":1710269871}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    4807.54 ms","slot_id":0,"t_prompt_processing":366.238,"t_token_generation":4441.3,"t_total":4807.5380000000005,"task_id":4951,"tid":"140591962781248","timestamp":1710269871}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1677,"n_ctx":2048,"n_past":1676,"n_system_tokens":0,"slot_id":0,"task_id":4951,"tid":"140591962781248","timestamp":1710269871,"truncated":true}
+[GIN] 2024/03/12 - 18:57:51 | 200 |  4.824488478s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":5249,"tid":"140591962781248","timestamp":1710269871}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1080,"n_prompt_tokens_processed":366,"slot_id":0,"task_id":5249,"tid":"140591962781248","timestamp":1710269871}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1080,"slot_id":0,"task_id":5249,"tid":"140591962781248","timestamp":1710269871}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     375.75 ms /   366 tokens (    1.03 ms per token,   974.05 tokens per second)","n_prompt_tokens_processed":366,"n_tokens_second":974.0544885016327,"slot_id":0,"t_prompt_processing":375.749,"t_token":1.026636612021858,"task_id":5249,"tid":"140591962781248","timestamp":1710269875}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    3266.21 ms /   214 runs   (   15.26 ms per token,    65.52 tokens per second)","n_decoded":214,"n_tokens_second":65.51942360052502,"slot_id":0,"t_token":15.26264953271028,"t_token_generation":3266.207,"task_id":5249,"tid":"140591962781248","timestamp":1710269875}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    3641.96 ms","slot_id":0,"t_prompt_processing":375.749,"t_token_generation":3266.207,"t_total":3641.956,"task_id":5249,"tid":"140591962781248","timestamp":1710269875}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1660,"n_ctx":2048,"n_past":1659,"n_system_tokens":0,"slot_id":0,"task_id":5249,"tid":"140591962781248","timestamp":1710269875,"truncated":true}
+[GIN] 2024/03/12 - 18:57:55 | 200 |  3.662969617s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":5466,"tid":"140591962781248","timestamp":1710269875}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1144,"n_prompt_tokens_processed":353,"slot_id":0,"task_id":5466,"tid":"140591962781248","timestamp":1710269875}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1144,"slot_id":0,"task_id":5466,"tid":"140591962781248","timestamp":1710269875}
+{"function":"print_timings","level":"INFO","line":257,"msg":"prompt eval time     =     373.62 ms /   353 tokens (    1.06 ms per token,   944.81 tokens per second)","n_prompt_tokens_processed":353,"n_tokens_second":944.807706204951,"slot_id":0,"t_prompt_processing":373.621,"t_token":1.0584164305949009,"task_id":5466,"tid":"140591962781248","timestamp":1710269882}
+{"function":"print_timings","level":"INFO","line":271,"msg":"generation eval time =    6073.37 ms /   400 runs   (   15.18 ms per token,    65.86 tokens per second)","n_decoded":400,"n_tokens_second":65.86124944717714,"slot_id":0,"t_token":15.183435,"t_token_generation":6073.374,"task_id":5466,"tid":"140591962781248","timestamp":1710269882}
+{"function":"print_timings","level":"INFO","line":281,"msg":"          total time =    6446.99 ms","slot_id":0,"t_prompt_processing":373.621,"t_token_generation":6073.374,"t_total":6446.995,"task_id":5466,"tid":"140591962781248","timestamp":1710269882}
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1897,"n_ctx":2048,"n_past":1896,"n_system_tokens":0,"slot_id":0,"task_id":5466,"tid":"140591962781248","timestamp":1710269882,"truncated":true}
+[GIN] 2024/03/12 - 18:58:02 | 200 |  6.467518928s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":5869,"tid":"140591962781248","timestamp":1710269882}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":1195,"n_prompt_tokens_processed":351,"slot_id":0,"task_id":5869,"tid":"140591962781248","timestamp":1710269882}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":1195,"slot_id":0,"task_id":5869,"tid":"140591962781248","timestamp":1710269882}
+[GIN] 2024/03/12 - 18:58:08 | 200 |  6.271033097s |       127.0.0.1 | POST     "/api/chat"
+{"function":"update_slots","level":"INFO","line":1627,"msg":"slot released","n_cache_tokens":1933,"n_ctx":2048,"n_past":1932,"n_system_tokens":0,"slot_id":0,"task_id":5869,"tid":"140591962781248","timestamp":1710269888,"truncated":true}
+[GIN] 2024/03/12 - 18:59:15 | 200 |      88.676µs |       127.0.0.1 | HEAD     "/"
+[GIN] 2024/03/12 - 18:59:15 | 404 |     354.656µs |       127.0.0.1 | POST     "/api/show"
+time=2024-03-12T18:59:17.451Z level=INFO source=download.go:136 msg="downloading e9e56e8bb5f0 in 64 413 MB part(s)"
+time=2024-03-12T19:00:59.833Z level=INFO source=download.go:136 msg="downloading 79b7eca19f7a in 1 43 B part(s)"
+time=2024-03-12T19:01:03.361Z level=INFO source=download.go:136 msg="downloading 9dec05e9b2db in 1 484 B part(s)"
+[GIN] 2024/03/12 - 19:01:30 | 200 |         2m14s |       127.0.0.1 | POST     "/api/pull"
+[GIN] 2024/03/12 - 19:01:30 | 200 |    1.611135ms |       127.0.0.1 | POST     "/api/show"
+[GIN] 2024/03/12 - 19:01:30 | 200 |     544.093µs |       127.0.0.1 | POST     "/api/show"
+time=2024-03-12T19:01:30.019Z level=INFO source=routes.go:78 msg="changing loaded model"
+time=2024-03-12T19:01:30.538Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-03-12T19:01:30.594Z level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 8.6"
+time=2024-03-12T19:01:30.594Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-03-12T19:01:30.595Z level=INFO source=gpu.go:146 msg="CUDA Compute Capability detected: 8.6"
+time=2024-03-12T19:01:30.595Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-03-12T19:01:30.595Z level=INFO source=dyn_ext_server.go:90 msg="Loading Dynamic llm server: /tmp/ollama3189124162/cuda_v11/libext_server.so"
+time=2024-03-12T19:01:30.595Z level=INFO source=dyn_ext_server.go:150 msg="Initializing llama server"
+llama_model_loader: loaded meta data with 26 key-value pairs and 995 tensors from /root/.ollama/models/blobs/sha256:e9e56e8bb5f0fcd4860675e6837a8f6a94e659f5fa7dce6a1076279336320f2b (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = mistralai
+llama_model_loader: - kv   2:                       llama.context_length u32              = 32768
+llama_model_loader: - kv   3:                     llama.embedding_length u32              = 4096
+llama_model_loader: - kv   4:                          llama.block_count u32              = 32
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 14336
+llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   9:                         llama.expert_count u32              = 8
+llama_model_loader: - kv  10:                    llama.expert_used_count u32              = 2
+llama_model_loader: - kv  11:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  12:                       llama.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  13:                          general.file_type u32              = 2
+llama_model_loader: - kv  14:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  15:                      tokenizer.ggml.tokens arr[str,32000]   = ["<unk>", "<s>", "</s>", "<0x00>", "<...
+llama_model_loader: - kv  16:                      tokenizer.ggml.scores arr[f32,32000]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  17:                  tokenizer.ggml.token_type arr[i32,32000]   = [2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 6, ...
+llama_model_loader: - kv  18:                      tokenizer.ggml.merges arr[str,58980]   = ["▁ t", "i n", "e r", "▁ a", "h e...
+llama_model_loader: - kv  19:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv  20:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv  21:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv  22:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  23:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  24:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+llama_model_loader: - kv  25:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type  f16:   32 tensors
+llama_model_loader: - type q4_0:  833 tensors
+llama_model_loader: - type q8_0:   64 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: special tokens definition check successful ( 259/32000 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = SPM
+llm_load_print_meta: n_vocab          = 32000
+llm_load_print_meta: n_merges         = 0
+llm_load_print_meta: n_ctx_train      = 32768
+llm_load_print_meta: n_embd           = 4096
+llm_load_print_meta: n_head           = 32
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 32
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 4
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: n_ff             = 14336
+llm_load_print_meta: n_expert         = 8
+llm_load_print_meta: n_expert_used    = 2
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 1000000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 32768
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: model type       = 7B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 46.70 B
+llm_load_print_meta: model size       = 24.62 GiB (4.53 BPW) 
+llm_load_print_meta: general.name     = mistralai
+llm_load_print_meta: BOS token        = 1 '<s>'
+llm_load_print_meta: EOS token        = 2 '</s>'
+llm_load_print_meta: UNK token        = 0 '<unk>'
+llm_load_print_meta: LF token         = 13 '<0x0A>'
+llm_load_tensors: ggml ctx size =    0.76 MiB
+llm_load_tensors: offloading 18 repeating layers to GPU
+llm_load_tensors: offloaded 18/33 layers to GPU
+llm_load_tensors:        CPU buffer size = 25215.87 MiB
+llm_load_tensors:      CUDA0 buffer size = 14086.69 MiB
+....................................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: freq_base  = 1000000.0
+llama_new_context_with_model: freq_scale = 1
+ggml_init_cublas: GGML_CUDA_FORCE_MMQ:   yes
+ggml_init_cublas: CUDA_USE_TENSOR_CORES: no
+ggml_init_cublas: found 1 CUDA devices:
+  Device 0: NVIDIA RTX A4000, compute capability 8.6, VMM: yes
+llama_kv_cache_init:  CUDA_Host KV buffer size =   112.00 MiB
+llama_kv_cache_init:      CUDA0 KV buffer size =   144.00 MiB
+llama_new_context_with_model: KV self size  =  256.00 MiB, K (f16):  128.00 MiB, V (f16):  128.00 MiB
+llama_new_context_with_model:  CUDA_Host input buffer size   =    13.02 MiB
+llama_new_context_with_model:      CUDA0 compute buffer size =   192.01 MiB
+llama_new_context_with_model:  CUDA_Host compute buffer size =   188.03 MiB
+llama_new_context_with_model: graph splits (measure): 3
+loading library /tmp/ollama3189124162/cuda_v11/libext_server.so
+{"function":"initialize","level":"INFO","line":433,"msg":"initializing slots","n_slots":1,"tid":"140591417517632","timestamp":1710270096}
+{"function":"initialize","level":"INFO","line":442,"msg":"new slot","n_ctx_slot":2048,"slot_id":0,"tid":"140591417517632","timestamp":1710270096}
+time=2024-03-12T19:01:36.066Z level=INFO source=dyn_ext_server.go:161 msg="Starting llama main loop"
+[GIN] 2024/03/12 - 19:01:36 | 200 |  6.050056038s |       127.0.0.1 | POST     "/api/chat"
+{"function":"update_slots","level":"INFO","line":1565,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140587734906432","timestamp":1710270096}
+{"function":"launch_slot_with_data","level":"INFO","line":823,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140587734906432","timestamp":1710270105}
+{"function":"update_slots","level":"INFO","line":1796,"msg":"slot progression","n_past":0,"n_prompt_tokens_processed":915,"slot_id":0,"task_id":0,"tid":"140587734906432","timestamp":1710270105}
+{"function":"update_slots","level":"INFO","line":1821,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140587734906432","timestamp":1710270105}
