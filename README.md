@@ -21,7 +21,7 @@ Trying the ScratchPad !
     cp config_example.json config.json
     cp openai_api_key_example.txt openai_api_key.txt
 
-### Ollama installation and Downloading Models
+### Ollama installation and Downloading Models (Run this multiple times until the models are downloaded)
     bash setup.sh
 
 
