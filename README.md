@@ -8,6 +8,7 @@ Trying the ScratchPad !
 ### Install the conda
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     bash Miniconda3-latest-Linux-x86_64.sh
+### At this point, restart the terminal
 
 ### Start up a conda env
     conda env create -f neo-sophia/env.yml
