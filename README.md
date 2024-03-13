@@ -24,6 +24,9 @@ Trying the ScratchPad !
 ### Ollama installation and Downloading Models (Run this multiple times until the models are downloaded)
     bash setup.sh
 
+### Change the model = <your-model-name> in agent.py and util.py
+### Location: workspace/neo-sophia/src/neosophia/agents/
+### You can use various models
 
 ## Episode 12 - Data too big for LLMs? Try Scratchpads
 ## Before running this, set the environment variables
